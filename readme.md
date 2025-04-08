@@ -10,20 +10,20 @@ assicurati di indicare la struttura dati da usare ed eventuali attributi per cia
 
 ## table columns
 
-- id
-- marca
-- modello
-- tipo carrozzeria
-- cilindrata
-- cv
-- colore
-- anno immatricolazione
-- km
-- porte
-- prezzo
-- disponibilità
-- alimentazione
-- cambio
-- stato
-- dimensioni
-- descrizione
+- id: Primary key - auto_increment - notnull
+- marca: VARCHAR - notnull
+- modello: VARCHAR - notnull
+- tipo carrozzeria: VARCHAR - notnull
+- cilindrata: INT - notnull
+- cv: INT - notnull
+- colore: VARCHAR - notnull
+- anno immatricolazione: YEAR - notnull
+- km: INT - notnull
+- porte: SMALL INT - notnull
+- prezzo: INT - notnull
+- disponibilità: TINY INT - default(1)
+- alimentazione: VARCHAR - notnull
+- cambio: VARCHAR - default(1)
+- stato: VARCHAR - notnull
+- dimensioni: VARCHAR - notnull
+- descrizione: TEXT - null(0)
